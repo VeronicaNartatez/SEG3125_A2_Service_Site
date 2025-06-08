@@ -90,3 +90,96 @@ nav{
     background-color: white;
   }
   
+
+
+  
+/* General Styling */
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* nav hover green color */
+.nav_hyper:hover {
+  color: #4CAF50;
+}
+
+/* button hover green color */
+.book-btn:hover {
+  background-color: #388E3C;
+  color: #FFFFFF;
+}
+
+/* Main Content */
+/* center main content */
+.main-content {
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* OUR SERVICES AND PRICES font */
+.main-content h1 {
+  font-family: 'Playfair Display', serif;
+  color: #FFFFFF;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* service card */
+.service-card {
+  background-color: #58351C;
+  border: 2px solid #80573a;
+  padding: 40px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #E0E0E0;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+/* service card hover effect*/
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: #4CAF50;
+  color: #4CAF50;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #2e2e2e;
+  margin-top: 50px;
+}
+
+.footer h5 {
+  font-family: 'Playfair Display', serif;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  color: #BDBDBD;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}

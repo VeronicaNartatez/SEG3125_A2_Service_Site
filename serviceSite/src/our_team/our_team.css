@@ -1,92 +1,201 @@
 body {
-    background-image: url(../../public/green-hair-styling-stations-1024x768.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background-image: url(../../public/green-hair-styling-stations-1024x768.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 
 }
 
 /* Navigation bar */
-nav{
-    background-color: #3b4b21;
+nav {
+  background-color: #3b4b21;
 }
 
 .navbar {
-    padding: 0;
+  padding: 0;
 }
 
 /* navigation bar */
 .navbar_ab {
-    background-color: #3b4b21;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  
-  /* hyperlinks on right of navbar */
-  .navbar_ab a {
-    float: right;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-.navbar-nav{
-    -bs-nav-link-hover-color: white;
-    --bs-nav-link-color: white;
-    --bs-nav-link-hover-color: white;
+  background-color: #3b4b21;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-  
+/* hyperlinks on right of navbar */
+.navbar_ab a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-nav {
+  -bs-nav-link-hover-color: white;
+  --bs-nav-link-color: white;
+  --bs-nav-link-hover-color: white;
+}
+
+
 /* when uer hovers over hyperlinks in navbar */
 .nav_hyper:hover {
-    background-color: #636e35;
-    color: white;
-  }
-
- /* color of book button*/
-.book-btn{
-    background-color: #58351C;
+  background-color: #636e35;
+  color: white;
 }
 
- /* hover color when user hovers book app button */
-.book-btn:hover{
-    background-color: #80573a;
+/* color of book button*/
+.book-btn {
+  background-color: #58351C;
 }
 
- /* Icon top left in navbar */
+/* hover color when user hovers book app button */
+.book-btn:hover {
+  background-color: #80573a;
+}
+
+/* Icon top left in navbar */
 .navbar_ab svg {
-    height: 30px;
-    width: auto;
-    fill: white;
-    vertical-align: middle;
-    margin: 8px 16px; /* add space around it */
+  height: 30px;
+  width: auto;
+  fill: white;
+  vertical-align: middle;
+  margin: 8px 16px;
+  /* add space around it */
 }
 
 
- /*body of page*/
+/*body of page*/
 
 /*background*/
 #bg-img {
-    width: 100%;
-    height: 50rem;
+  width: 100%;
+  height: 50rem;
 }
 
-  .footer p,h5 {
-    color: #3b4b21;
+.footer p,
+h5 {
+  color: #3b4b21;
 
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+}
 
-  h5 {
-    font-size: 25px;
-  }
+h5 {
+  font-size: 25px;
+}
 
-  .footer{
-    background-color: white;
-  }
-  
+.footer {
+  background-color: white;
+}
+
+
+
+
+/* General Styling */
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* nav hover green color */
+.nav_hyper:hover {
+  color: #4CAF50;
+}
+
+/* Button hover turns green */
+.book-btn:hover {
+  background-color: #388E3C;
+  color: #FFFFFF;
+}
+
+/* Main Content */
+/* center "Our team"  */
+.main-content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* change "Our team" font */
+.main-content h1 {
+  font-family: 'Playfair Display', serif;
+  color: #FFFFFF;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* change "ONLY THE BEST FOR YOU" font */
+.main-content h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #A5D6A7;
+  /* Light green */
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+/* Team Container */
+/* Team menber display side by side */
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* Team menber name text decoration */
+.team-member {
+  text-decoration: none;
+  color: #E0E0E0;
+  transition: transform 0.3s;
+}
+
+/* Team menber hover effect */
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+/* Team menber img display circle effect */
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #2e2e2e;
+  margin-bottom: 20px;
+}
+
+/* Team menber name font */
+.team-member p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #2e2e2e;
+  margin-top: 50px;
+}
+
+.footer h5 {
+  font-family: 'Playfair Display', serif;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  color: #BDBDBD;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
