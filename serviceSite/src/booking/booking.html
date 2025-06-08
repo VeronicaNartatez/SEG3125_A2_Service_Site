@@ -36,83 +36,116 @@
 
 
         <!--FORM-->
+        <div class="flex-row-centre">
+
         <div class = 'form-box'>
-            <p class = 'title'> Request for a New appointment</p>
+            <p class = 'title' id = 'title-form'> Request for a New Appointment</p>
             <p class = 'small-title'>Since our small business hours may vary, we will email you about the times available for the day you choose!</p>
 
             <form method = 'post' action="/submit-feedback">
 
-                <label class = 'box-label'>Your First Name:
-                    <input class = 'input-box' type="text" name="username" placeholder="Eren" required>
-                </label>
+                <div class="flex-col">
+                    <div class="flex-row">
+                        <label class = 'box-label'>Your First Name:</label>
+                    </div>
+                    <div class="flex-row">
+                        <input class = 'input-box' type="text" name="username" placeholder="Eren" required>
+                    </div>
+                </div>
 
-                <label class = 'box-label'>Your Last Name:
+                <div class="flex-row">
+                    <label class = 'box-label'>Your Last Name:</label>
+                </div>
+                <div class="flex-row">
                     <input class = 'input-box' type="text" name="username" placeholder="Yeager" required>
-                </label>
+                </div>
 
-                <label class = 'box-label'>Email:
+                <div class="flex-row">
+                    <label class = 'box-label'>Email:</label>
+                </div>
+                <div class="flex-row">
                     <input class = 'input-box' type = "email" placeholder = "name@domain.com" 
                       required /> 
-                 </label>
+                </div>
 
-                 <label class = 'box-label'>Phone Number:
+                <div class="flex-row">
+                    <label class = 'box-label'>Phone Number:</label>
+                </div>
+                <div class="flex-row">
                     <input class = 'input-box' type = "tel" placeholder = "(123) 123-1234"
                         pattern = "\(\d{3}\) +\d{3}-\d{4}" required />
-	            </label>
+                </div>
 
-                <label class = 'box-label'>Date:
+                <div class="flex-row">
+                    <label class = 'box-label'>Date:</label>
+                </div>
+                <div class="flex-row">
                     <input class = 'input-box' type = "date" /> 
-                     (yyyy-mm-dd)
-                </label>
+                </div>
 
                 <p>Choose the timeframe that works best for you</p>
 
-                <label class = 'box-label'>Time:
-                    <input class = 'input-box' type = "time" /> (hh:mm)
-                  </label>
-
-                <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                      <option selected>Sam Smith</option>
-                      <option value="1">Jessica Alba</option>
-                      <option value="2">Alex Alexander</option>
-                    </select>
-                    <label for="floatingSelect">Choose your stylist!</label>
+                <div class="flex-row">
+                    <label class = 'box-label'>Start Time:</label>
+                </div>
+                <div class="flex-row">
+                    <input class = 'input-box' type = "time" /> <p>(hh:mm)</p>
                 </div>
 
-                <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                        <option disabled>Women's Services</option>
-                        <option>Women's Cut and Style $60+</option>
-                        <option>Blow dry $40+</option>
-                        <option>Solid color with Haircut $135+</option>
-                        <option>Foils highlights with Haircut $170+</option>
-                        <option>Balyage with Haircut $200</option>
-                        <option>Toner without styling $50+</option>
-                        <option>Hair mask add-on $25+</option>
-                        <option>Color only (No blow dry) $85+</option>
-                        <option>Full head Highlights $100</option>
-                        <option>Balayage $150+</option>
-                        <option>Kid girl cut $48</option>
-  
-                        <option disabled>Men's Services</option>
-                        <option>Men's Cut and Style $38+</option>
-                        <option>Men's Cut and Beard $38+</option>
-                        <option>Cut beard and wax $45+</option>
-                        <option>Kid boys cut $25+</option>
-                        <option>Hair mask add-on $20</option>
-                        <option>Outline / Beard trim $85+</option>
-                        <option>Relaxer straightening and cute $92+</option>
-                        <option>Perm $110+</option>
-                        <option>Men's color and cut $80+</option>
-                    </select>
-                    <label for="floatingSelect">Select which service</label>
-                  </div>
+                <div class="flex-row">
+                    <label class = 'box-label'>End Time:</label>
+                </div>
+                <div class="flex-row">
+                    <input class = 'input-box' type = "time" /> <p>(hh:mm)</p>
+                </div>
+
+                <div class="parent-boot">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Sam Smith</option>
+                          <option value="1">Jessica Alba</option>
+                          <option value="2">Alex Alexander</option>
+                        </select>
+                        <label for="floatingSelect">Choose your stylist!</label>
+                    </div>
+                </div>
+    
+                <div class="parent-boot">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option disabled>Women's Services</option>
+                            <option>Women's Cut and Style $60+</option>
+                            <option>Blow dry $40+</option>
+                            <option>Solid color with Haircut $135+</option>
+                            <option>Foils highlights with Haircut $170+</option>
+                            <option>Balyage with Haircut $200</option>
+                            <option>Toner without styling $50+</option>
+                            <option>Hair mask add-on $25+</option>
+                            <option>Color only (No blow dry) $85+</option>
+                            <option>Full head Highlights $100</option>
+                            <option>Balayage $150+</option>
+                            <option>Kid girl cut $48</option>
+      
+                            <option disabled>Men's Services</option>
+                            <option>Men's Cut and Style $38+</option>
+                            <option>Men's Cut and Beard $38+</option>
+                            <option>Cut beard and wax $45+</option>
+                            <option>Kid boys cut $25+</option>
+                            <option>Hair mask add-on $20</option>
+                            <option>Outline / Beard trim $85+</option>
+                            <option>Relaxer straightening and cute $92+</option>
+                            <option>Perm $110+</option>
+                            <option>Men's color and cut $80+</option>
+                        </select>
+                        <label for="floatingSelect">Select which service</label>
+                    </div>
+                </div>
 
                   <div id = 'submit-btn-box'>
                     <input id = 'submit-btn' type = "submit"  value = "Submit Appointnment Request"/> 
                   </div>
             </form>
+        </div>
         </div>
             
 

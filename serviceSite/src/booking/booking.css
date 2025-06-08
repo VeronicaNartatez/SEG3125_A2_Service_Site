@@ -74,13 +74,21 @@ nav{
   justify-content: center;
 
   background-color: #58351C;
-  width: 50%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #3b4b21;
 }
 
 .title {
   color: white;
   font-size: 5rem;
   text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .small-title{
@@ -91,6 +99,8 @@ nav{
 
 p{
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .box-label{
@@ -103,6 +113,8 @@ p{
 
 .form-floating {
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .form-select{
@@ -110,10 +122,43 @@ p{
   justify-content: center;
 }
 
+.flex-row-centre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
 
+.parent-boot{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
 
+#title-form{
+  font-family: Agbalumo;
+}
+
+#submit-btn-box{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
 
  /*footer*/
   .footer p,h5 {
