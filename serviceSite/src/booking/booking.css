@@ -75,7 +75,6 @@ nav{
 
   background-color: #58351C;
   width: 50%;
-  margin 0 auto;
 }
 
 .title {
@@ -124,7 +123,7 @@ p{
     justify-content: center;
   }
 
-  h5 {
+  h5{
     font-size: 25px;
   }
 
