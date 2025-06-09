@@ -1,0 +1,200 @@
+body {
+  background-image: url(../../public/green-hair-styling-stations-1024x768.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+/* Navigation bar */
+.navbar_ab {
+  background-color: #3b4b21;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* hyperlinks on right of navbar */
+.navbar_ab a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* when user hovers over hyperlinks in navbar */
+.nav_hyper:hover {
+  background-color: #636e35;
+  color: white;
+}
+
+/* color of book button*/
+.book-btn {
+  background-color: #58351C;
+}
+
+/* hover color when user hovers book app button */
+.book-btn:hover {
+  background-color: #80573a;
+}
+
+/* Icon top left in navbar */
+.navbar_ab svg {
+  height: 30px;
+  width: auto;
+  fill: white;
+  vertical-align: middle;
+  margin: 8px 16px;
+}
+
+
+/*body of page*/
+.main-content {
+  padding: 50px 20px;
+  text-align: center;
+  /* Semi-transparent overlay */
+  border-radius: 15px;
+  margin: 50px auto;
+}
+
+.main-content h1 {
+  font-family: 'Playfair Display', serif;
+  color: #FFFFFF;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.main-content h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #A5D6A7;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+/* Team Container */
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.team-member-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+.team-member {
+  text-decoration: none;
+  color: #E0E0E0;
+  transition: transform 0.3s;
+  cursor: pointer;
+  position: relative;
+  /* Needed for absolute positioning of the arrow */
+  user-select: none;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #3b4b21;
+  margin-bottom: 20px;
+}
+
+.team-member p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Get to know me section */
+.get-to-know {
+  color: white;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-to-know::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  /* Pointing down */
+  transition: transform 0.3s ease;
+  margin-right: 10px;
+}
+
+.team-member.active .get-to-know::before {
+  transform: rotate(-135deg);
+  /* Pointing up */
+}
+
+
+/* Stylist Details Dropdown */
+.stylist-details {
+  background-color: rgba(139, 69, 19, 0.85);
+  /* Brown background from storyboard */
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out, margin-top 0.5s ease-out;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.stylist-details h3 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  margin-top: 10px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.stylist-details p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+
+/* Footer */
+.footer {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p,
+.footer h5 {
+  color: #3b4b21;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer h5 {
+  font-size: 25px;
+}
